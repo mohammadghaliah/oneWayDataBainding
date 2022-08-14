@@ -1,0 +1,22 @@
+<p>One way binding</p>
+
+<!-- Interpolation -->
+<p>Welcome, {{ firstName }} {{ lastName }}</p>
+
+<!-- --------------- -->
+<hr />
+<br />
+
+<!-- Property binding -->
+
+<p [innerText]="firstName"></p>
+
+<button [disabled]="isDisabled">I am disabled</button>
+
+<button (click)="onSave()">Save</button>
+
+<input (input)="handleInput($event)" />
+<p>You have entered {{ value }}</p>
+
+<input #el />
+<button (click)="onSave2(el)">Save</button>
